@@ -1,3 +1,0 @@
-This is just a file made via the github website to showcase git pull command
-
-This is a change I am making to showcase commiting and pushing changes.
