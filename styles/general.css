@@ -1,8 +1,21 @@
+:root {
+	--primary-bg-color: #bee0ff;
+	--secondary-bg-color: #8dc8ff;
+	--tertiary-bg-color: #6bb8ff;
+	--primary-text-color: #0b2741;
+	--secondary-text-color: #2a4d6d;
+	--tertiary-text-color: #ffffff;
+	--primary-shadow-color: #306393;
+	--secondary-shadow-color: #4e7293;
+	--primary-border-color: #306393;
+	--secondary-border-color: #007aae;
+}
+
 *,
 *::before,
 *::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background-color: dodgerblue;
+	background-color: var(--primary-bg-color);
 }
