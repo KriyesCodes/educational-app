@@ -1,0 +1,114 @@
+:root {
+  --light-blue: #6bb8ff;
+  --lightish-blue: #8dc8ff;
+  --lighter-blue: #bee0ff;
+  --darkest-blue: #6691b9;
+  --H2-blue: #2a4d6d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  /* height: 100vw; */
+}
+body {
+  background-color: var(--lighter-blue);
+}
+
+h1 {
+  display: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--light-blue);
+  padding: 1.5em;
+}
+
+.math-app {
+  grid-column: 1;
+  margin-left: 150px;
+}
+
+.start {
+  grid-column: 3;
+}
+
+.button,
+.play-button {
+  background-color: var(--lighter-blue);
+  border: 1px solid var(--darkest-blue);
+  padding: 15px;
+  box-shadow: 4px 5px 4px var(--H2-blue);
+  width: 180px;
+}
+
+.button:hover,
+.play-button:hover {
+  background-color: var(--H2-blue);
+  color: white;
+}
+
+.button:active,
+.play-button:active {
+  box-shadow: 4px 5px 4px var(--H2-blue);
+  transform: translateY(4px);
+}
+
+.button {
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.play-button {
+  height: 180px;
+  border-radius: 100%;
+  font-size: 40px;
+  top: 10em;
+  left: 12em;
+  position: absolute;
+}
+
+.intro {
+  display: flex;
+  height: 20px;
+  text-align: center;
+  margin: 5em 10em;
+}
+
+.square {
+  background-color: var(--lightish-blue);
+  width: 450px;
+  height: 350px;
+  margin-right: 70px;
+  position: relative;
+}
+
+.triangle {
+  /* /* width: 15em; */
+  margin-top: 30px;
+  margin-left: 70px;
+  width: 500px;
+  height: 450px;
+  background: var(--light-blue);
+  clip-path: polygon(0% 20%, 100% 0%, 40% 100%);
+}
+
+.square-text,
+.triangle-text {
+  font-size: 40px;
+  text-align: center;
+}
+
+.square-text {
+  font-size: 40px;
+  padding: 120px 60px;
+}
+
+.triangle-text {
+  font-size: 40px;
+  padding: 110px 150px 90px 100px;
+}
